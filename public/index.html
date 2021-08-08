@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <title>Babyfoot Manager</title>
+</head>
+
+<body>
+    <div class="join-container">
+        <div class="join-header">
+            <img class="logo" src="https://www.easilys.com/wp-content/themes/easilys/assets/images/easilys-logo.png"
+                alt="Easilys">
+            <h1>Babyfoot Manager</h1>
+        </div>
+        <div class="join-main">
+            <div>
+                <!-- username for chat feature -->
+                <!-- check username to avoid ambiguity -->
+                <form action="manager.html" onsubmit="goToNextPage(this); return false;">
+                    <label for="username">Pick a username</label>
+                    <input maxlength="20" type="text" name="username" id="username" placeholder="Enter username..."
+                        required />
+                    <input type="submit" class="btn btn-success" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"
+        integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/formValidation.js"></script>
+</body>
+
+</html>

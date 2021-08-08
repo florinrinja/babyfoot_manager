@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+h1 {
+    padding: 1rem;
+}
+
+:root {
+	--dark-color-a: #667aff;
+	--dark-color-b: #7386ff;
+	--light-color: #e6e9ff;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 20px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+    border-radius: 0.5rem;
+}
+
+.users-container {
+	visibility: hidden;
+    padding: 10px;
+    border: 2px solid red;
+}
+
+#ongoing-games {    
+	display: flex;
+    flex-direction: column;
+}
+
+.games-label {
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.games {
+    display: flex;
+    align-items: baseline;
+}
+
+button:last-of-type {
+	margin-left: auto;
+}
+
+.game-container {
+    padding: 10px;
+	display: flex;
+    border: 2px solid red;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.corner-infos {
+    position: absolute;
+    top: -20px;
+    border-radius: 5px;
+	background: var(--dark-color-a);
+    padding: 5px;
+    text-align: center;
+}
+
+#parties {
+    left: 10px;
+	color: white;
+}
+
+#game-count{
+    right: 10px;
+    min-width: 2rem;
+	color: white;
+}
+
+.game-form-container {
+	padding: 20px 30px;
+}
+
+#current-user {
+	font-size: 2rem;
+	color: red;
+}
+
+.user-greeting {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.babyfoot-manager, .chat-manager {
+	border: solid 2px purple;
+}
+
+/* Chat Style */
+.chat-container {
+	max-width: 80vw;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.chat-header {
+	background: var(--dark-color-a);
+	color: #fff;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chat-messages {
+	padding: 30px;
+	overflow-y: scroll;
+	visibility: hidden;
+}
+
+.chat-manager{
+	display: flex;
+	flex-direction: column;
+}
+
+.chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	color: #777;
+}
+
+.chat-form-container {
+	margin-top: auto;
+	visibility: hidden;
+}
+
+.chat-form-container form, .game-form-container form {
+	display: flex;
+}
+
+.chat-form-container input[type='text'], .game-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+}
+
+/* Join page style */
+.join-container {
+	max-width: max-content;
+	margin: 80px auto;
+	color: #fff;
+}
+
+.join-header {
+	text-align: center;
+	padding: 20px;
+	background: var(--dark-color-a);
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+    display: flex;
+}
+
+.join-main {
+	padding: 30px 40px;
+	background: var(--dark-color-b);
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main .btn {
+	margin-top: 20px;
+	width: 100%;
+}
